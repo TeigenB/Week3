@@ -13,3 +13,8 @@ If a player has more than 0 points they decide if they want to keep playing.
 If a player decides not to play again the game is over.
 kelton was here
 Designing Classes:
+1. look for nouns to identify objects in the game.
+2. define responsibility, behaviors and state for each object. look for related verbs
+3. identify the relationships between objects. look at ui to help
+4. translate your object designs to class designs. class and method names, parameters, data types
+5. document objects and classes so everyone can refer to them.
