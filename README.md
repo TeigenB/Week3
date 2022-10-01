@@ -29,11 +29,11 @@ Method: Start Game(self)
 Method: User Input(self)
 -Show the current card
 -Ask the user if the next card is higher or lower
--return CHOICE
+-return CHOICE (int:1=high 2=low)
 
 Method: Point Update(self)
 -Add 100 points to the existing score or subtract 75 points from the existing score
--Return POINTS
+-Return POINTS (int)
 
 Method: Output(self)
 -If current point value is > 0 run a message asking if player wants to keep going
@@ -48,8 +48,8 @@ Method: Game end(self)
 Class: Dealer(self)
 Method: Generate deck (1-13)
 -Initializes the class and starts a new instance
--Return DECK
+-Return DECK (array)
 
 Method: Generate Card(self)
 -Will generate a card with a random number between 1 and 13
--Return CARD
+-Return CARD (int)
