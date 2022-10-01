@@ -46,7 +46,7 @@ Method: Game end(self)
 
 
 Class: Dealer(self)
-Method: Generate deck (1-13)
+Method: Generate deck (self)
 -Initializes the class and starts a new instance
 -Return DECK (array)
 
