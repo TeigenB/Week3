@@ -20,22 +20,36 @@ Designing Classes:
 
 Class: Game
 Method: Initialize Game(self)
+
 Method: Start Game(self)
 -I think this is here so that you can run multiple rounds of the game without having to completely exit out and restart the program
 -Display the starting score of 300 points
+-Return True/False (for if wanting to CONTINUE playing)
+
 Method: User Input(self)
 -Show the current card
 -Ask the user if the next card is higher or lower
+-return CHOICE
+
 Method: Point Update(self)
 -Add 100 points to the existing score or subtract 75 points from the existing score
+-Return POINTS
+
 Method: Output(self)
 -If current point value is > 0 run a message asking if player wants to keep going
 -If player answers no, run game end method
+-Return CONTINUE (Which will infuence true/false method for game end)
+
 Method: Game end(self)
 -If current point value is <= 0 run an end game message and run the initialize method on a new game
+-Also if CONTINUE is false then end game
 
-Class: Card(self)
-Method: Card generate
+
+Class: Dealer(self)
+Method: Generate deck (1-13)
 -Initializes the class and starts a new instance
-Method: Random number(self)
+-Return DECK
+
+Method: Generate Card(self)
 -Will generate a card with a random number between 1 and 13
+-Return CARD
