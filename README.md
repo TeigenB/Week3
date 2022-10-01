@@ -11,10 +11,31 @@ The player loses 75 points if they guessed incorrectly.
 If a player reaches 0 points the game is over.
 If a player has more than 0 points they decide if they want to keep playing.
 If a player decides not to play again the game is over.
-kelton was here
 Designing Classes:
 1. look for nouns to identify objects in the game.
 2. define responsibility, behaviors and state for each object. look for related verbs
 3. identify the relationships between objects. look at ui to help
 4. translate your object designs to class designs. class and method names, parameters, data types
 5. document objects and classes so everyone can refer to them.
+
+Class: Game
+Method: Initialize Game(self)
+Method: Start Game(self)
+-I think this is here so that you can run multiple rounds of the game without having to completely exit out and restart the program
+-Display the starting score of 300 points
+Method: User Input(self)
+-Show the current card
+-Ask the user if the next card is higher or lower
+Method: Point Update(self)
+-Add 100 points to the existing score or subtract 75 points from the existing score
+Method: Output(self)
+-If current point value is > 0 run a message asking if player wants to keep going
+-If player answers no, run game end method
+Method: Game end(self)
+-If current point value is <= 0 run an end game message and run the initialize method on a new game
+
+Class: Card(self)
+Method: Card generate
+-Initializes the class and starts a new instance
+Method: Random number(self)
+-Will generate a card with a random number between 1 and 13
