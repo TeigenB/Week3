@@ -53,3 +53,5 @@ Method: Generate deck (self)
 Method: Generate Card(self)
 -Will generate a card with a random number between 1 and 13
 -Return CARD (int)
+
+**Good design. Never understood classes the way this is designed.
