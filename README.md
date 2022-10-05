@@ -24,7 +24,7 @@ Class: Game
 Method: Initialize Game(self) *Monday*
 -Start the game run
 
-Method: Start Game(self) *Monday
+Method: Start Round(self) *Monday
 -I think this is here so that you can run multiple rounds of the game
 -Display the starting score of 300 points
 -Return True/False (for if wanting to CONTINUE playing)
