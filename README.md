@@ -21,38 +21,39 @@ Designing Classes:
 5. document objects and classes so everyone can refer to them.
 
 Class: Game
-Method: Initialize Game(self)
+Method: Initialize Game(self) *Monday*
+-Start the game run
 
-Method: Start Game(self)
--I think this is here so that you can run multiple rounds of the game without having to completely exit out and restart the program
+Method: Start Game(self) *Monday
+-I think this is here so that you can run multiple rounds of the game
 -Display the starting score of 300 points
 -Return True/False (for if wanting to CONTINUE playing)
 
-Method: User Input(self)
+Method: User Input(self) *Josiah*
 -Show the current card
 -Ask the user if the next card is higher or lower
 -return CHOICE (int:1=high 2=low)
 
-Method: Point Update(self)
+Method: Point Update(self) *Josiah*
 -Add 100 points to the existing score or subtract 75 points from the existing score
 -Return POINTS (int)
 
-Method: Output(self)
+Method: Output(self) *Kelton*
 -If current point value is > 0 run a message asking if player wants to keep going
 -If player answers no, run game end method
 -Return CONTINUE (Which will infuence true/false method for game end)
 
-Method: Game end(self)
+Method: Game end(self) *Kelton*
 -If current point value is <= 0 run an end game message and run the initialize method on a new game
 -Also if CONTINUE is false then end game
 
 
 Class: Dealer(self)
-Method: Generate deck (self)
+Method: Generate deck (self) *Teigen*
 -Initializes the class and starts a new instance
 -Return DECK (array)
 
-Method: Generate Card(self)
+Method: Generate Card(self) *Teigen*
 -Will generate a card with a random number between 1 and 13
 -Return CARD (int)
 
