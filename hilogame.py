@@ -6,7 +6,6 @@ class game:
         """Initiates a new game with is_playing and point_value as attributes"""
         self.is_playing = True
         self.point_value = 300
-<<<<<<< HEAD
         self.current_card = ""
         self.higher = ""
         self.lower = ""
@@ -17,8 +16,15 @@ class game:
 #Methods 2-4
     """These functions will go through a round of the game. """
     def start_round(self):
-
-        pass
+        """Starts the game by running the main game loop.
+        
+        Args:
+            self (game): an instance of game.
+        """
+        while self.is_playing:
+            self.input()
+            self.update_points()
+            self.output()
 
 #Method 3
     def input(self):
@@ -44,18 +50,6 @@ class game:
             self.score += card.points 
         self.total_score += self.score
 
-=======
-        
-#Methods 2-4
-    """These functions will go through a round of the game. """"
-    def start_round(self):
-        pass
-    def input(self):
-        pass
-    def update_points(self):
-        pass
-
->>>>>>> cd7774c67bc7942a1fc7a1aee3a049aa16d33ff5
 #Method 5
     def output(self):
         """Displays the score and will evaluate if the user is able to or wants to keep playing.
@@ -79,12 +73,4 @@ class game:
         while not self.is_playing:
             print(f"Your score was {self.point_value}")
             self.point_value == 300
-<<<<<<< HEAD
             self.is_playing = True
-=======
-            self.is_playing = True
-
-
-
-
->>>>>>> cd7774c67bc7942a1fc7a1aee3a049aa16d33ff5
