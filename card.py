@@ -9,7 +9,7 @@ import random
 #-Will generate a card with a random number between 1 and 13
 #-Return CARD (int)
 
-class card:
+class Dealer:
     #responsibility: to initialize the creation of the card
     #and create the card with a value between 1-13
 

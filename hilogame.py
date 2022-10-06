@@ -1,5 +1,6 @@
+from card import Dealer
 class game:
-
+#this is a test
 #Methods 1
 
     def __init__(self):
