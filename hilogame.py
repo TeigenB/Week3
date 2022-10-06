@@ -1,3 +1,4 @@
+from card import Dealer
 class game:
 
 #Methods 1
