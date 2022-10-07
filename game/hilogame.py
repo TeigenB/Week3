@@ -15,7 +15,7 @@ class Game:
         self.score = 0
         self.total_score = 0
         
-#Methods 2-4
+#Methods 2
     """These functions will go through a round of the game. """
     def start_round(self):
         """Starts the game by running the main game loop.
