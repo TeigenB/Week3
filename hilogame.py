@@ -11,8 +11,9 @@ class game:
         self.higher = ""
         self.lower = ""
         self.choice = 0
-        self.score = 0
-        self.total_score = 0
+        self.next_card = 0
+        self.user_input = 0
+        self.card = ""
         
 #Methods 2
     """These functions will go through a round of the game. """
@@ -29,27 +30,31 @@ class game:
 
 #Method 3
     def input(self):
-        """Ask the user if the next card is higher or lower. (Josiah)"""
-        self.current_card = ""
-        self.next_card = input("Is next next higher or lower?")
-        self.is_playing = (self.next_card == "y")
-        if self.is_playing == self.higher:
+        """Generate and print the current card."""
+        self.current_card = self.card.generate()
+        print(f"The current card is {self.current_card}")
+
+        self.next_card = self.card.generate()
+        print("Is next next card higher or lower?")
+        self.user_input = input("[h/l]")
+        if self.user_input == "h":
             self.choice = 1
-        if self.is_playing == self.lower:
+        if self.is_playing == "l":
             self.choice = 2
         return self.choice
 
     #Method 4
     def update_points(self):
-        """Updates the player's score.(Josiah)"""
+        """Updates the player's score."""
         if not self.is_playing:
             return
 
-        for i in range(len(self.value)):
-            card = self.value[i]
-            card.generate()
-            self.score += card.points 
-        self.total_score += self.score
+        if self.choice == 1:
+            self.point_value += 100
+        if self.choice == 2:
+            self.point_value -= 75
+        else:
+            self.point_value = 0
 
 #Method 5
     def output(self):
