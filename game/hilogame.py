@@ -50,19 +50,12 @@ class Game:
         if not self.is_playing:
             return
 
-<<<<<<< HEAD:hilogame.py
         if self.choice == 1:
             self.point_value += 100
         if self.choice == 2:
             self.point_value -= 75
         else:
             self.point_value = 0
-=======
-        for i in range(len(self.value)):
-            card.generate()
-            self.score += card.points 
-        self.total_score += self.score
->>>>>>> 1e1f8f7dfa878e8596720fd292aad7b63e5ac26d:game/hilogame.py
 
 #Method 5
     def output(self):
