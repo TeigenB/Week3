@@ -1,5 +1,6 @@
-from card import Dealer
-class game:
+from game.card import card
+
+class Game:
 #this is a test
 #Methods 1
 
@@ -46,7 +47,6 @@ class game:
             return
 
         for i in range(len(self.value)):
-            card = self.value[i]
             card.generate()
             self.score += card.points 
         self.total_score += self.score
@@ -68,6 +68,7 @@ class game:
         elif self.point_value < 0:
             print("You have no more points to play")
             self.end_game()
+            
 
 #Method 6
     def end_game(self):
