@@ -45,7 +45,7 @@ class game:
 
     #Method 4
     def update_points(self):
-        """Updates the player's score."""
+        """Updates the player's score.git"""
         if not self.is_playing:
             return
 
