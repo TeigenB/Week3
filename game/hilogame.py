@@ -37,12 +37,6 @@ class Game:
         self.next_card = card().generate()
         print("Is next card higher or lower?")
         self.user_input = input("[H/L]: ")
-
-        #I believe all the following code is unnecessary, it's saying the same thing
-        # if self.user_input == "H":
-        #     self.choice = 1
-        # if self.is_playing == "L":
-        #     self.choice = 2
         return self.user_input
 
     #Method 4
@@ -51,9 +45,9 @@ class Game:
         if not self.is_playing:
             return
 
-        if self.choice == 1:
+        if self.current_card < self.next_card and self.user_input == "H":
             self.point_value += 100
-        if self.choice == 2:
+        if self.current_card > self.next_card and self.user_input == "L":
             self.point_value -= 75
         else:
             self.point_value = 0
