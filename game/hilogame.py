@@ -32,17 +32,18 @@ class Game:
 #Method 3
     def input(self):
         """Generate and print the current card."""
-        self.current_card = self.card.generate()
+        self.current_card = card().generate()
         print(f"The current card is {self.current_card}")
+        self.next_card = card().generate()
+        print("Is next card higher or lower?")
+        self.user_input = input("[H/L]: ")
 
-        self.next_card = self.card.generate()
-        print("Is next next card higher or lower?")
-        self.user_input = input("[h/l]")
-        if self.user_input == "h":
-            self.choice = 1
-        if self.is_playing == "l":
-            self.choice = 2
-        return self.choice
+        #I believe all the following code is unnecessary, it's saying the same thing
+        # if self.user_input == "H":
+        #     self.choice = 1
+        # if self.is_playing == "L":
+        #     self.choice = 2
+        return self.user_input
 
     #Method 4
     def update_points(self):

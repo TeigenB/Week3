@@ -29,4 +29,5 @@ class card:
         #args: self(card): an instance of Card class
 
         self.value = random.randint(1, 13)
+        return self.value
         

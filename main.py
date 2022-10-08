@@ -1,4 +1,4 @@
-from  game.hilogame import game
+from game.hilogame import Game
 
-game = game()
+game = Game()
 game.start_round()
