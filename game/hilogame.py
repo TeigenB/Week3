@@ -45,9 +45,9 @@ class Game:
         if not self.is_playing:
             return
 
-        if self.current_card < self.next_card and self.user_input == "H":
+        elif self.current_card < self.next_card and self.user_input == "H":
             self.point_value += 100
-        if self.current_card > self.next_card and self.user_input == "L":
+        elif self.current_card > self.next_card and self.user_input == "L":
             self.point_value -= 75
         else:
             self.point_value = 0
